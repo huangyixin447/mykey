@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="keyword:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/keyword_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="keyword" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="JUnit4" module-name="keyword" />
+          <element id="library" level="project" name="lib_thymeleaf" />
+          <element id="library" level="project" name="lib" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="keyword/web/Web" />
+    </root>
+  </artifact>
+</component>

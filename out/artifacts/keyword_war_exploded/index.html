@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/edit.css">
+</head>
+<body>
+<div id="div_container">
+	<div id="div_fruit_list">
+		<p class="center f30">密码信息</p>
+		<form action="index" method="post" >
+
+			<table id="tbl_fruit">
+
+				<tr>
+					<th class="w20">注意：</th>
+					<td><div>注意链接只可以访问两次次，如果没有访问到就重新生成</div></td>
+				</tr>
+				<tr>
+					<th class="w20">密码位数：</th>
+					<td><input type="text" name="length" th:value="${session.length}"style="width: 30px;"></td>
+				</tr>
+				<tr>
+					<th class="w20">链接（复制）：</th>
+					<td><input class="jks" type="text" name="fcount" th:value="${session.url} " style="width: 600px" disabled/></td>
+				</tr>
+
+				<tr>
+					<th colspan="2">
+						<input type="submit" value="点击生成链接" />
+					</th>
+				</tr>
+			</table>
+		</form>
+	</div>
+</div>
+</body>
+</html>

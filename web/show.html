@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/edit.css">
+</head>
+<body>
+<div id="div_container">
+	<div id="div_fruit_list">
+		<p class="center f30">密码:</p>
+
+
+			<table id="tbl_fruit">
+				<tr>
+					<th class="w20">密码：</th>
+
+					<td><input class="jks" type="text" name="fname" th:value="${session.key}"style="width: 600px" disabled/></td>
+				</tr>
+				<tr>
+					<th class="w20">访问次数：</th>
+					<td><input type="text" name="price" th:value="${session.counter}" style="width:50px" disabled/></td>
+				</tr>
+
+			</table>
+
+	</div>
+</div>
+</body>
+</html>
