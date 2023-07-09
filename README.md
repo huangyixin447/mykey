@@ -33,6 +33,6 @@ session1 VARCHAR(200),
 CONSTRAINT yuwnd UNIQUE(key1)
 );
 ```
-修改一下src下的peizhi（配置文件）
+修改一下src下的peizhi（配置文件），然后打包成war包keyword.war
 将其war包后粘贴到weapps中去，注意名称要是keyword.war，否则会报错,复制后使用tomcat中bin下的start.bat来开启tomcat，这时服务启动，注意关闭cmd窗口服务停止。
 服务启动后，访问本机对应设置的ip加端口号加上/keyword，既可。
